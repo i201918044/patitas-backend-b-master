@@ -41,8 +41,11 @@ public class AutenticacionServiceImpl implements AutenticacionService {
                     loginRequestDTO.password().equals(datos[2])) {
 
                     datosUsuario = new String[2];
-                    datosUsuario[0] = datos[3]; // Recuperar nombre
-                    datosUsuario[1] = datos[4]; // Recuperar email
+                    datosUsuario[0] = datos[0]; // Recuperar tipo de documento
+                    datosUsuario[1] = datos[1]; // Recuperar numero de documento
+                    datosUsuario[2] = datos[3]; // Recuperar nombre
+                    datosUsuario[3] = datos[4]; // Recuperar email
+
 
                 }
 
